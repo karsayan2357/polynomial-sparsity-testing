@@ -1,0 +1,8 @@
+\begin{thebibliography}{BOT88}
+
+\bibitem[BOT88]{ben-or-tiwari}
+Michael Ben-Or and Prasoon Tiwari.
+\newblock A deterministic algorithm for sparse multivariate polynomial interpolation.
+\newblock In {\em Proceedings of the Twentieth Annual ACM Symposium on Theory of Computing}, STOC '88, page 301–309, New York, NY, USA, 1988. Association for Computing Machinery.
+
+\end{thebibliography}

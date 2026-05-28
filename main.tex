@@ -1,0 +1,39 @@
+\documentclass{report}
+\include{preamble}
+\begin{document}
+	
+	\large
+	
+	\pagestyle{empty}
+	\include{titlepage}
+	
+	\large
+			\begin{abstract}
+					
+				\noindent contents...
+		
+			\end{abstract}
+	
+	\newpage
+	
+	\include{notations}
+	
+	\tableofcontents
+	
+	\pagebreak
+	
+	\pagestyle{fancy}
+	
+	\newpage
+	
+	\pagenumbering{arabic}
+	
+	\include{chapters/ch1}
+	
+	\bibliographystyle{alpha}
+	\bibliography{references}
+
+	\appendix
+	\include{appendix}
+	
+\end{document}
