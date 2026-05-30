@@ -1,0 +1,143 @@
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,skins,hooks}
+
+%%%% BASIC TEMOPLATE FOR THMS %%%% 
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{observation}[theorem]{Observation}
+
+
+\definecolor{main}{HTML}{5989cf}    % setting main color to be used
+\definecolor{sub}{HTML}{cde4ff}     % setting sub color to be used
+
+\tcbset{
+	sharp corners,
+	colback = white,
+	before skip = 0.2cm,    % add extra space before the box
+	after skip = 0.5cm      % add extra space after the box
+}                           % setting global options for tcolorbox
+
+
+\newtcolorbox{bluebox}{
+	colback = sub, 
+	colframe = main, 
+	boxrule = 0pt, 
+	leftrule = 6pt % left rule weight
+}
+
+\definecolor{maingreen}{HTML}{4a9c59}    % setting main green color
+\definecolor{subgreen}{HTML}{d4edda}     % setting sub green color
+
+\newtcolorbox{greenbox}{
+    colback = subgreen, 
+    colframe = maingreen, 
+    boxrule = 0pt, 
+    leftrule = 6pt
+}
+
+\definecolor{mainpurple}{HTML}{6a1b9a}    % setting main purple color
+\definecolor{subpurple}{HTML}{ede7f6}     % setting sub purple color
+
+\newtcolorbox{purplebox}{
+    colback = subpurple, 
+    colframe = mainpurple, 
+    boxrule = 0pt, 
+    leftrule = 6pt
+}
+
+\definecolor{maingrey}{HTML}{616161}   % main grey color
+\definecolor{subgrey}{HTML}{f5f5f5}    % light grey background
+
+\newtcolorbox{greybox}{
+    colback = subgrey,
+    colframe = maingrey,
+    boxrule = 0pt,
+    leftrule = 6pt
+}
+
+\definecolor{mainblack}{HTML}{000000}   % full black border
+\definecolor{subblack}{HTML}{e0e0e0}    % dark body background
+
+\newtcolorbox{blackbox}{
+    colback = black!5,
+    colframe = mainblack,
+    boxrule = 0pt,
+    leftrule = 6pt
+}
+
+
+%\newtcbtheorem[number within=section]{theorem}{Theorem}{}{theorem}
+
+
+%%%%% COLORFUL THEOREMS %%% 
+
+%\newtcbtheorem[number within=section]{theorem}{Theorem}{enhanced, 
+%	colback=green!10!white, 
+%	%	colback=violet!20!white,
+%	colframe=white, 
+%	frame hidden, 
+%	sharp corners, 
+%	attach title to upper, 
+%	fonttitle=\bfseries\color{black}, 
+%	after title=\quad}{th}
+%
+%%%%% LEMMA %%%%%
+%
+%\newtcbtheorem[use counter from=theorem]{lemma}{Lemma}{enhanced, 
+%	sharp corners,
+%	colback=yellow!10!white,
+%	colframe=white,
+%	frame hidden,
+%	attach title to upper,
+%	fonttitle=\bfseries\color{black},
+%	after title=\quad}{lem}
+%
+%%%%% QUESTION %%%%%%
+%
+%\newtcbtheorem[use counter from=theorem]{question}{Question}{enhanced, 
+%	sharp corners,
+%	colback=orange!15!white,
+%	colframe=white,
+%	frame hidden,
+%	attach title to upper,
+%	fonttitle=\bfseries\color{black},
+%	after title=\quad}{qsn}
+%
+%%%%%%  DEFINITION %%%%%
+%
+%\newtcbtheorem[use counter from=theorem]{definition}{Definition}{enhanced,
+%	colback=cyan!15!white,
+%	colframe=white,
+%	frame hidden,
+%	sharp corners,
+%	attach title to upper,
+%	fonttitle=\bfseries\color{black},
+%	after title = \quad
+%}{def}
+%
+%\newtcbtheorem[use counter from=theorem]{proposition}{Proposition}{
+%	enhanced,
+%	colback=cyan!5!white,
+%	colframe=white,
+%	sharp corners,
+%	frame hidden,
+%	attach title to upper,
+%	fonttitle=\bfseries\color{black},
+%	after title=\quad}{prop}
+
+
+%
+%%%%%% ABSTRACT %%%%%%
+%\renewenvironment{abstract}
+%{
+%	\begin{center}\fontfamily{lmss}\bfseries\large \S\hspace{0.05in}Abstract\hspace{0.05in}\S\end{center}
+%	\normalsize}
+%{\par}

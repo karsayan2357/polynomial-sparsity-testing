@@ -1,0 +1,81 @@
+%%%%% ABSTRACT %%%%
+
+\renewenvironment{abstract}
+{
+	\cleardoublepage
+	\null\vfill
+	\begin{center}
+		\bfseries\Large Abstract
+	\end{center}
+	\begin{quote}
+		\large
+	}
+	{
+	\end{quote}
+	\vfill\null
+}
+
+
+%%% CHAPTER HEADING %%%%
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\normalfont\scshape\bfseries}
+  {\Large\chaptertitlename\ \thechapter}{0pt}{\huge}[\vspace{0.5ex}{\color{gray!60}\hrule}]
+  
+\titlespacing*{\chapter}
+  {0pt}     % left margin
+  {50pt}    % space before
+  {40pt}    % space after
+
+  %%%% TITLE %%%%%%
+%\usepackage{titlesec}
+%
+%\titleformat{\section}
+%{\fontfamily{lmss}\bfseries\Large}
+%{\thesection}{1em}{}
+%
+%\titleformat{\subsection}
+%{\fontfamily{lmss}\bfseries\large}
+%{\thesubsection}{1em}{}
+%
+%\titleformat{\subsubsection}
+%{\fontfamily{lmss}\bfseries\normalsize}
+%{\thesubsubsection}{1em}{}
+
+%\usepackage{titlesec}
+%
+%\titleformat{\chapter}[display]
+%{\normalfont\huge\bfseries}
+%{\chaptertitlename\ \thechapter}
+%{12pt}
+%{\Huge\textsc}
+%[\vspace{0.5ex}\titlerule]
+
+
+%%%% OPERATORS %%%
+
+\DeclareMathOperator{\mon}{mon}
+
+
+%% inner prod %%%
+\newcommand{\inp}[2]{\langle #1, #2 \rangle}
+
+%% o-operation %% 
+\newcommand{\tensor}{\otimes}
+\newcommand{\xor}{\oplus}
+\newcommand{\hprod}{\odot}
+
+%% matrix %%
+\newcommand{\rank}{\mathsf{rank}}
+
+%% Probability %% 
+\newcommand{\E}{\mathds{E}}
+\newcommand{\D}{\mathds{D}}
+\renewcommand{\Pr}{\mathds{P}\mathrm{r}}
+
+%% Random %%
+\newcommand{\OR}{\operatorname{OR}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\supp}{\operatorname{supp}}
